@@ -352,7 +352,14 @@ footer a:hover { text-decoration: underline; }
 </section>
 
 <footer>
-  <p>© <span id="year"></span> Nusantara Ojek — Semua Hak Dilindungi.</p>
+  <p class="font-medium text-sm text-white text-center mt-3">
+            &copy; 2020
+            <script>
+              new Date().getFullYear() > 2010 &&
+                document.write("- " + new Date().getFullYear());
+            </script>
+            Dibuat <span class="text-pink-500 animate-bounce">❤️</span> Oleh Jesaya Sohasuhatan Ambarita
+          </p>
   <p><a href="#home">Beranda</a> • <a href="#services">Layanan</a> • <a href="#contact">Kontak</a></p>
 </footer>
 
@@ -370,5 +377,6 @@ document.getElementById("contactForm").addEventListener("submit", (e)=>{
 
 </body>
 </html>
+
 
 
